@@ -1,0 +1,16 @@
+{
+  "name": "validation-framework",
+  "version": "1.0.0",
+  "description": "Validating incoming request and outgoing response",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Haripriya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9"
+  }
+}
