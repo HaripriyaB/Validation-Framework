@@ -11,6 +11,7 @@ let requestSchema = new MyValidator.CreateSchema({
   username: new MyValidator.string().alphanum().maxlen(10).minlen(5).required(),
   birth_year: new MyValidator.number().integer().minvalue(1980).maxvalue(2000).required(),
   age: new MyValidator.number().minvalue(10).maxvalue(50).required(),
+  email: new MyValidator.string().email()
 });
 
 let responseSchema = new MyValidator.CreateSchema({

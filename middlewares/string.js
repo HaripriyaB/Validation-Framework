@@ -43,6 +43,20 @@ class string {
       return true;
     }
   }
+
+  email(){
+    if(this.value){
+      const mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/;
+      if(mailformat.test(this.value)){
+        return true;
+      } else{
+        return `Error: ${this.value} is not a valid email format`;
+      }
+    } else{
+      this.funcList.push("email;[]");
+      return this;
+    }
+  }
   setArgs(val) {
     let listOfReturns = [];
     this.value = val;
@@ -64,7 +78,6 @@ class string {
         listOfReturns.push(result);
       }
     }
-    // this.funcList = [];
     return listOfReturns;
   }
 }

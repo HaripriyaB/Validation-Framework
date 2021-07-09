@@ -79,7 +79,6 @@ class number {
         listOfReturns.push(result);
       }
     }
-    this.funcList = [];
     return listOfReturns;
   }
 }
